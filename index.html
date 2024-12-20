@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="upper">
+    <h class="Heading">DAP Weather</h>
+    <img class="logo" src="logo.png">
+
+  </div>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">About</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Contact</button>
+    
+    <div class="search" ><input  type="text" placeholder="Search..">
+      <button> <img class="sbox" src="search.png"></button>
+       </div>
+    
+    
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <h3></h3>
+    <p>Welcome to DAP Weather</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3></h3>
+    <p><a class="about" href="https://princesharma16.github.io/About-Section/"><button>Click Here</button> </a>
+    </p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3></h3>
+    
+      <p>
+        <a href="https://www.instagram.com/_yaa.its_deepanshu_/"><img class="img" src="insta.png"></a>
+        <a href="#team"><img class="img" src="gmail.webp"></a>
+        <a href="https://github.com/PrinceSharma16"><img class="img" src="gh.png"></a>
+      </p>
+      
+    
+  </div>
+  <div id="sideMenu" class="sideMenu">
+		<a href="javascript:void(0)"
+			class="closeBtn"
+			onclick="closeNav()">&#10005;</a>
+		<div class="mainMenu">
+			<h2>SideMenu</h2>
+			<a href="javascript:void(0)"
+				onclick="showContent('Delhi')">Delhi</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('London')">London</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('New York')">New York</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('Tokyo')">Tokyo</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('Germany')">Germany</a>
+		</div>
+	</div>
+	
+	<div id="contentArea">
+		<span style="font-size: 30px; cursor: pointer; color: aqua;"
+			onclick="openNav()">☰ Quick Menu</span>
+		<div class="contentText">
+			
+			<h3><div>
+        <h1 class="city"></h1>
+       <div class="Pos">
+        <img src="logo.png" class="weatherIcon">
+       <div class="pos2"> <h2 class="temp"></h2>
+        <h3 class="wind"></h3>
+        <h4 class="humidity"></h4>
+      </div>
+      <div class="pos3">
+        <h5 class="flikes"></h5>
+        <h6 class="tempMin"></h6>
+        <h7 class="tempMax"></h7>
+      </div>
+      </div>
+      </div></h3>
+		</div>
+	</div>
+  
+  <p class="last">Famous City Weather Stats</p>
+  <table class="table" border="1">
+    <tr>
+      <td>City</td>
+      <td>Temparature</td>
+      <td>Wind Speed</td>
+      <td>Humidity</td>
+    </tr>
+    <tr>
+        <td>Bhopal</td>
+        <td class="bh1"></td>
+        <td class="w1"></td>
+        <td class="h1"></td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td class="bh2"></td>
+        <td class="w2"></td>
+        <td class="h2"></td>
+    </tr>
+    <tr>
+        <td>Delhi</td>
+        <td class="bh3"></td>
+        <td class="w3"></td>
+        <td class="h3"></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+	
+
+
+</html>
+
+
+  
+
+  
+    
+  <script src="script.js"></script>
+
+
+</body>
+</html>
